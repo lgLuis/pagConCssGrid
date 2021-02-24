@@ -39,10 +39,16 @@
     text-align: justify;
     padding: 30px;
 }
+.main > p{
+    margin-top: 20px;
+
+}
 .sidebar{
     grid-column-start: 3;
     grid-column-end: 4;
     min-height: 120px;
+    padding: 30px;
+    text-align: center;
 }
 .seccUno{
     grid-column-start: 1;
@@ -59,4 +65,36 @@
     grid-column-start: 1;
     grid-column-end: -1;
     min-height: 100px;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-color: lightgray;
+    }
+    .header,
+    .contenedor,
+    .main,
+    .sidebar,
+    .seccUno,
+    .seccDos,
+    .footer{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (max-width: 360px){
+    body{
+        background-color: blue;
+    }
+    .header,
+    .contenedor,
+    .main,
+    .sidebar,
+    .seccUno,
+    .seccDos,
+    .footer{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 }
